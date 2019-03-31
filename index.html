@@ -154,14 +154,16 @@ function showAndroidToast(idst,st1,st2,st3) {
   if(window.innerWidth<750){
 
  retona=  Android.showToast(idst,st1,st2,st3);
-   escribepp(retona)
+   escribepp(retona);
   }
 
     }
-
+    var datofecha ;
+    var eldatosfecha ;
 function escribepp(st){
-
-  document.getElementById("idpiddivpanel1").innerHTML=st;
+datofecha = new Date();
+  eldatosfecha =datofecha.getHours()+datofecha.getMinutes()/60+datofecha.getSeconds()/3600;
+  document.getElementById("idpiddivpanel1").innerHTML=st+"    "+ eldatosfecha;
 }
 </script>
    
