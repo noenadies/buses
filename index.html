@@ -142,20 +142,23 @@ function closeNav() {
 
 function fidbtenviarinformacion(){
 
-	Android.showToast("giovanni rodriguez");
+	showAndroidToast("gps","st1",st2,st3);
 }
 
-function showAndroidToast(toast) {
+function showAndroidToast(idst,st1,st2,st3) {
 
   if(window.innerWidth<750){
 
-   Android.showToast(toast);
+   Android.showToast(idst,st1,st2,st3);
 
   }
 
     }
 
+function escribepp(st){
 
+  document.getElementById("idpiddivpanel1").innerHTML=st;
+}
 </script>
    
 </body>
