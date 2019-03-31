@@ -100,6 +100,7 @@ body {
 		<p id="idpiddivpanel1">ssssssssssssssssssssssss</p>
 
 <button  onclick="fidbtenviarinformacion();" id="idbtenviarinformacion">A</button>
+
 </div>
 
 
@@ -108,7 +109,7 @@ body {
 		<a href="#">About</a>
 		<a href="#">Services</a>
 		<a href="#">Clients</a>
-		<a href="#">Contact</a>
+		<a onclick="hablarandroid();" href="#">Hablar</a>
 	  </div>
 	  
 
@@ -164,6 +165,12 @@ function escribepp(st){
 datofecha = new Date();
   eldatosfecha =datofecha.getHours()+datofecha.getMinutes()/60+datofecha.getSeconds()/3600;
   document.getElementById("idpiddivpanel1").innerHTML=st+"    "+ eldatosfecha;
+}
+
+
+function hablarandroid(){
+  retona=  Android.showToast("habla","st1","st2","st3");
+  escribepp(retona);
 }
 </script>
    
