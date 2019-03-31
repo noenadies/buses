@@ -141,16 +141,20 @@ function closeNav() {
 
 
 function fidbtenviarinformacion(){
+setInterval(function(){
+	showAndroidToast("gps","st1","st2","st3");
 
-	showAndroidToast("gps","st1",st2,st3);
+
+},2000);
+
 }
-
+var retona="";
 function showAndroidToast(idst,st1,st2,st3) {
 
   if(window.innerWidth<750){
 
-   Android.showToast(idst,st1,st2,st3);
-
+ retona=  Android.showToast(idst,st1,st2,st3);
+   escribepp(retona)
   }
 
     }
